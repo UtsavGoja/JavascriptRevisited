@@ -1,0 +1,75 @@
+<H1>Rock Paper Scissor</H1>
+
+<button onclick="
+    const randomValue = Math.random();
+    let computerValue = '';
+    
+    if(randomValue >= 0 && randomValue < 1/3){
+        computerValue = 'rock';
+    }else if(randomValue >= 1/3 && randomValue < 2/3){
+        computerValue = 'paper';
+    }else if(randomValue >= 2/3 && randomValue < 1){
+        computerValue = 'scissor';
+    }
+
+    let result = '';
+
+    if ( computerValue === 'rock'){
+        result  = 'tie';
+    }else if(computerValue === 'paper'){
+        result = 'you lose';
+    }else if(computerValue === 'scissor'){
+        result = 'you win';
+    }
+
+    alert(`your choice is rock. computer's choice is ${computerValue}.${result}`)
+">Rock</button>
+
+<button onclick="
+    const randomValue = Math.random();
+    let computerValue = '';
+    
+    if(randomValue >= 0 && randomValue < 1/3){
+        computerValue = 'rock';
+    }else if(randomValue >= 1/3 && randomValue < 2/3){
+        computerValue = 'paper';
+    }else if(randomValue >= 2/3 && randomValue < 1){
+        computerValue = 'scissor';
+    }
+
+    let result = '';
+
+    if ( computerValue === 'rock'){
+        result  = 'you win';
+    }else if(computerValue === 'paper'){
+        result = 'tie';
+    }else if(computerValue === 'scissor'){
+        result = 'you lose';
+    }
+
+    alert(`your choice is paper. computer's choice is ${computerValue}.${result}`)
+" >Paper</button>
+<button onclick="
+    const randomValue = Math.random();
+    let computerValue = '';
+    
+    if(randomValue >= 0 && randomValue < 1/3){
+        computerValue = 'rock';
+    }else if(randomValue >= 1/3 && randomValue < 2/3){
+        computerValue = 'paper';
+    }else if(randomValue >= 2/3 && randomValue < 1){
+        computerValue = 'scissor';
+    }
+
+    let result = '';
+
+    if ( computerValue === 'rock'){
+        result  = 'you lose';
+    }else if(computerValue === 'paper'){
+        result = 'you win';
+    }else if(computerValue === 'scissor'){
+        result = 'you tie';
+    }
+
+    alert(`your choice is scissor. computer's choice is ${computerValue}.${result}`)
+" >Scissor</button>
